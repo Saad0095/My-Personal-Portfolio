@@ -56,7 +56,9 @@
     <!-- Navbar End -->
 
     <main>
+
         <!-- Home Section Start -->
+
         <section id="home" class="hero-section">
             <div class="container my-5 py-4">
                 <div class="row">
@@ -116,18 +118,113 @@
 
         <hr class="container text-white">
 
+        <!-- Services Section Start -->
 
         <section id="services">
 
         </section>
 
-        <section id="projects">
+        <!-- Services Section End -->
 
+        <!-- Projects Section Start -->
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="section-title mb-5">Projects</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="project">
+                            <img src="Media/Images/project1.PNG" alt="Project 1">
+                            <div class="project-info">
+                                <h3 class="project-title">Gym Website</h3>
+                                <p class="project-description">A modern and responsive website for a gym or fitness
+                                    center. It includes information about services, classes, facilities, faqs and contact
+                                    details.</p>
+                                <a href="https://get-lean-gym.netlify.app/" target="_blank"><button type="button" class="btn project-link">View
+                                        Project</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project">
+                            <img src="Media/Images/project2.PNG" alt="Project 2">
+                            <div class="project-info">
+                                <h3 class="project-title">Hotel Website</h3>
+                                <p class="project-description">A visually appealing website for a hotel or resort. It
+                                    showcases rooms, amenities,etc.</p>
+                                <a href="https://saad0095.github.io/ComfortNook-Hotel/" target="_blank"><button type="button"
+                                        class="btn project-link">View Project</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="project">
+                            <img src="Media/Images/project3.PNG" alt="Project 3">
+                            <div class="project-info">
+                                <h3 class="project-title">Tic-Tac-Toe Game</h3>
+                                <p class="project-description">A classic game of Tic-Tac-Toe built using HTML, CSS, and
+                                    JavaScript.</p>
+                                <a href="https://saad0095.github.io/Tic-Tac-Toe-Game/" target="_blank"><button type="button" class="btn project-link">View
+                                        Project</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="https://github.com/Saad0095" target="_blank" rel="noopener noreferrer"><button
+                            type="button" class="btn btn-primary">Explore More Projects</button></a>
+                </div>
+            </div>
         </section>
+
+        <!-- Projects Section End -->
+
+        <hr class="container text-white">
+
+        <!-- Skills Section Start -->
+
+        <section id="skills" class="py-5">
+            <div class="container">
+                <h2 class="section-title mb-5">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <h3 class="skill-name">HTML</h3>
+                        <div class="progress">
+                            <div class="real-bar" style="width: 100%;">
+                                <div class="progress-bar"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skill-name">CSS</h3>
+                        <div class="progress">
+                            <div class="real-bar" style="width: 95%;">
+                                <div class="progress-bar"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h3 class="skill-name">JavaScript</h3>
+                        <div class="progress">
+                            <div class="real-bar" style="width: 85%;">
+                                <div class="progress-bar"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section End -->
+
+        <!-- Contact Section Start -->
 
         <section id="contact">
 
         </section>
+
+        <!-- Contact Section End -->
+
     </main>
 
     <!-- Footer -->
@@ -135,13 +232,14 @@
     <footer class="container">
         <p>Copyright &copy; 2024. All rights reserved.</p>
         <div class="">
-            <p>Follow me on <a href="https://www.linkedin.com/in/saad-bin-khalid-b077b8243/" target="_blank"><i
+            <p>Follow me on <a href="https://www.linkedin.com/in/saad-bin-khalid-b077b8243/"><i
                         class="fab fa-linkedin"></i></a></p>
         </div>
     </footer>
 
     <!-- Footer End -->
 
+    <!-- Bootstrap CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -150,7 +248,33 @@
     <!-- Typed JS: https://github.com/mattboldt/typed.js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+    <!-- Custom files  -->
     <script src="script.js"></script>
+
+    <script>
+        // Smooth scrolling function
+        function smoothScroll(target) {
+            const element = document.querySelector(target);
+            const offset = 60; // Adjust according to your navbar height
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: elementPosition - offset,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scroll when anchor link is clicked
+        // Smooth scroll when anchor link is clicked
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log("Link clicked:", this.getAttribute('href')); // Debugging
+                const target = this.getAttribute('href');
+                smoothScroll(target);
+            });
+        });
+
+    </script>
 </body>
 
 </html>

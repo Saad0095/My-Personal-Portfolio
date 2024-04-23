@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: rgb(2, 171, 194);
-    --secondary-color: rgb(2, 171, 194);
+    --primary-heading-color: #2ecc71;
     --primary-text-font: ;
     --primary-heading-font: ;
 }
@@ -16,20 +16,30 @@ html {
     padding: 0px;
 }
 
-.primary-color{
+/* Common Stylings */
+
+.primary-color {
     color: var(--primary-color);
 }
 
 body {
-    background-color: #121212; 
+    background-color: #121212;
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
 /* Navbar */
+
 .navbar {
     /* border-bottom: 2px solid rgb(182, 182, 182); */
     /* position: fixed;
@@ -65,7 +75,7 @@ a{
 
 /* Hero Section */
 
-.hero-section{
+.hero-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -81,19 +91,19 @@ a{
     justify-content: center;
     font-size: 45px;
     font-weight: 700;
-    
+
 }
 
 .hero-section .main-title .btn {
     border: 2px solid white;
     color: white;
-    
+
 }
 
 .hero-section .main-title .btn:hover {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
-    
+
 }
 
 
@@ -102,23 +112,21 @@ a{
     justify-content: center;
     align-items: center;
     width: 70%;
-    margin: auto;    
+    margin: auto;
 }
-
-/* About Section */
 
 @media screen and (max-width:700px) {
-    
-.hero-section{
-    height: 600px;
-    font-family: "Roboto", sans-serif;
- }
 
- 
-.hero-section .main-title {
-    font-size: 30px;
-    font-weight: 700;
-}
+    .hero-section {
+        height: 600px;
+        font-family: "Roboto", sans-serif;
+    }
+
+
+    .hero-section .main-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
 }
 
 /* About Section */
@@ -126,11 +134,8 @@ a{
     padding: 80px 0;
 }
 
-.section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #2ecc71; /* Green color */
+#about .section-title {
+    color: var(--primary-heading-color);
 }
 
 .about-text {
@@ -138,21 +143,6 @@ a{
     line-height: 1.8;
     margin-bottom: 20px;
 }
-
-/* .social-links {
-    margin-top: 20px;
-}
-
-.social-icon {
-    color: #fff;
-    font-size: 24px;
-    margin-right: 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.social-icon:hover {
-    transform: scale(1.2);
-} */
 
 .about-img img {
     width: 100%;
@@ -181,6 +171,103 @@ a{
     }
 }
 
+/* Projects Section */
+#projects {
+    padding: 80px 0;
+}
+
+.project {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: auto;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--primary-heading-color);
+}
+
+
+/* Skills Section */
+#skills {
+    padding: 80px 0;
+}
+
+.section-title {
+    color: var(--primary-color);
+
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    border-radius: 25px;
+    
+    transition: width 1s ease-out;
+}
+
+.progress:hover .progress-bar {
+    width: 100%;
+}
 
 
 
@@ -203,3 +290,18 @@ footer a {
     color: white;
     width: 20px;
 }
+
+/* .social-links {
+        margin-top: 20px;
+    }
+    
+    .social-icon {
+        color: #fff;
+        font-size: 24px;
+        margin-right: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.2);
+    } */
