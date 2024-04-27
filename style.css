@@ -183,6 +183,11 @@ a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.project h1 {
+    color: var(--primary-heading-color);
+
+}
+
 .project img {
     width: 100%;
     height: auto;
@@ -227,7 +232,7 @@ a {
 }
 
 .section-title {
-    color: var(--primary-color);
+    color: var(--primary-heading-color);
 
 }
 
@@ -268,8 +273,6 @@ a {
 .progress:hover .progress-bar {
     width: 100%;
 }
-
-
 
 /* Footer */
 
