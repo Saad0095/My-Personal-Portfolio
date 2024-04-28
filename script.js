@@ -7,12 +7,8 @@ var typed = new Typed('#element', {
 
 /* */
 
-document.querySelectorAll('.progress-bar').forEach(bar => {
+document.querySelectorAll('.progress').forEach(bar => {
     bar.addEventListener('mouseenter', function() {
-        this.style.width = '100%';
+        this.querySelector('.progress-bar').style.width = "100%";
     });
-
-    // bar.addEventListener('mouseleave', function() {
-    //     this.style.width = "0%";
-    // });
 });

@@ -2,9 +2,11 @@
 
 :root {
     --primary-color: rgb(2, 171, 194);
+    --primary-background-color: #121212;
+
     --primary-heading-color: #2ecc71;
-    --primary-text-font: ;
-    --primary-heading-font: ;
+    --primary-text-font:  "Roboto", sans-serif;
+    --primary-heading-font: "Roboto Condensed", sans-serif;
 }
 
 html {
@@ -23,7 +25,7 @@ html {
 }
 
 body {
-    background-color: #121212;
+    background-color: var(--primary-background-color);
     color: white;
 }
 
@@ -42,9 +44,10 @@ a {
 
 .navbar {
     /* border-bottom: 2px solid rgb(182, 182, 182); */
-    /* position: fixed;
+    position: fixed;
     width: 100%;
-     */
+    background-color: var(--primary-background-color);
+    
 }
 
 .navbar .navbar-brand {
@@ -136,12 +139,15 @@ a {
 
 #about .section-title {
     color: var(--primary-heading-color);
+    font-family: var(--primary-heading-font);
+
 }
 
 .about-text {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
+    font-family: var(--primary-text-font);
 }
 
 .about-img img {
@@ -181,10 +187,14 @@ a {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: rgb(169 157 237) 0px 1px 9px 0px;
+    height: 422px;
+
 }
 
 .project h1 {
     color: var(--primary-heading-color);
+    font-family: var(--primary-heading-font);
 
 }
 
@@ -207,6 +217,8 @@ a {
 .project-description {
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: var(--primary-text-font);
+
 }
 
 .project-link {
@@ -267,11 +279,7 @@ a {
     background-color: #007bff;
     border-radius: 25px;
     
-    transition: width 1s ease-out;
-}
-
-.progress:hover .progress-bar {
-    width: 100%;
+    transition: width 1.5s ease-out;
 }
 
 /* Footer */
@@ -286,12 +294,16 @@ footer {
     height: 60px;
     text-align: center;
     padding-top: 15px;
+    font-family: var(--primary-text-font);
+
 }
 
 footer a {
     text-decoration: none;
     color: white;
     width: 20px;
+    font-family: var(--primary-text-font);
+
 }
 
 /* .social-links {
