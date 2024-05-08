@@ -1,9 +1,11 @@
 /* Setup and start animation! */
-
-var typed = new Typed('#element', {
-    strings: ['', 'a Web Developer'],
-    typeSpeed: 100,
-});
+setTimeout(() => {
+    var typed = new Typed('#element', {
+        strings: ['', 'Web Developer'],
+        typeSpeed: 50,
+    });
+    
+}, 1000);
 
 /* */ 
 
