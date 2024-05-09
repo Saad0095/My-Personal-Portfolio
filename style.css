@@ -58,11 +58,12 @@ a {
     box-shadow: 0px 2px 10px 0px #0c0c0c;
 }
 
-.navbar .navbar-brand {
-    color: var(--primary-color);
+.navbar .logo {
+    color: rgb(0, 225, 255);
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bolder;
     font-size: 24px;
+    margin: 0;
 }
 
 .navbar .navbar-toggler {
