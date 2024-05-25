@@ -1,6 +1,4 @@
-# My-Personal-Portfolio
-
-# Saad Developer Portfolio
+# Personal Portfolio - Muhammad Saad Bin Khalid
 
 This is my Personal Portfolio Website, showcasing my skills as a frontend web developer. The website is built using HTML, CSS, Bootstrap, and JavaScript.
 
