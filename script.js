@@ -1,16 +1,6 @@
-/* Setup and start animation! */
-setTimeout(() => {
-    var typed = new Typed('#element', {
-        strings: ['', 'Web Developer'],
-        typeSpeed: 50,
-    });
-    
-}, 1000);
-
-/* */ 
-
 let navItem = document.querySelectorAll(".nav-link");
 let navCollapse = document.querySelector(".navbar-collapse")
+
 navItem.forEach((a) => {
     a.addEventListener("click", () => {
         navCollapse.classList.remove("show");
@@ -27,10 +17,31 @@ window.onscroll = () => {
     }
 }
 
-document.querySelectorAll('.progress').forEach(bar => {
-    bar.addEventListener('mouseenter', function () {
-        this.querySelector('.progress-bar').style.width = "100%";
-    });
-});
+let scrollContainer = document.querySelector('.scroll-container')
+let leftBtn = document.querySelector('.left-button')
+let rightBtn = document.querySelector('.right-button')
+
+leftBtn.addEventListener("click", ()=>{
+    scrollContainer.scrollBy({
+        left:300,
+        behavior:"smooth"
+    })
+})
+
+leftBtn.addEventListener("click", ()=>{
+    scrollContainer.scrollBy({
+        left:-400,
+        behavior:"smooth"
+    })
+})
+
+rightBtn.addEventListener("click", ()=>{
+    scrollContainer.scrollBy({
+        left:400,
+        behavior:"smooth"
+    })
+})
+
+
 
 
