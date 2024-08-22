@@ -16,47 +16,54 @@ window.onscroll = () => {
   }
 };
 
-let scrollContainer = document.querySelector(".scroll-container");
-let scrollAmount = 0;
-let scrollStep = 2;
-let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-let leftBtn = document.querySelector(".left-button");
-let rightBtn = document.querySelector(".right-button");
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
 
+  breakpoints: {
+    600: {
+      slidesPerView: 1, 
+    },
+    768: {
+      slidesPerView: 2, 
+    },
+    992: {
+      slidesPerView: 3, 
+    },
+  },
 
+  autoplay: {
+    delay: 2000, 
+    disableOnInteraction: false,  
+  },
 
-let autoScrollInterval;
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-setTimeout(() => {
-  autoScrollInterval = setInterval(autoScroll, 10);
-}, 3000);
-
-function autoScroll() {
-  scrollAmount += scrollStep;
-  scrollContainer.scrollLeft = scrollAmount;
-
-  setTimeout(() => {
-    if (scrollAmount >= maxScroll || scrollAmount <= 0) {
-      scrollStep = -scrollStep;
-    }
-  }, 500);
-}
-
-
-leftBtn.addEventListener("click", () => {
-  clearInterval(autoScrollInterval);
-
-  scrollContainer.scrollBy({
-    left: -400,
-    behavior: "smooth",
-  });
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
-rightBtn.addEventListener("click", () => {
-  clearInterval(autoScrollInterval);
+// let scrollContainer = document.querySelector(".scroll-container");
+// let leftBtn = document.querySelector(".left-button");
+// let rightBtn = document.querySelector(".right-button");
 
-  scrollContainer.scrollBy({
-    left: 400,
-    behavior: "smooth",
-  });
-});
+// leftBtn.addEventListener("click", () => {
+//   scrollContainer.scrollBy({
+//     left: -400,
+//     behavior: "smooth",
+//   });
+// });
+
+// rightBtn.addEventListener("click", () => {
+//   scrollContainer.scrollBy({
+//     left: 400,
+//     behavior: "smooth",
+//   });
+// });

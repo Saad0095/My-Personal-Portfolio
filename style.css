@@ -41,13 +41,11 @@ a {
   font-family: var(--primary-heading-font);
 }
 
-
 @media screen and (max-width: 600px) {
   .section-title {
     font-size: 30px;
   }
 }
-
 
 /* Navbar */
 
@@ -132,7 +130,6 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-
   .hero-section .main-title {
     font-size: 30px;
   }
@@ -159,26 +156,32 @@ a {
 }
 
 @media screen and (max-width: 768px) {
- .about-text {
+  .about-text {
     font-size: 16px;
   }
 }
 
 /* Projects Section */
 
-.scroll-container {
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* .scroll-container {
   display: flex;
   gap: 3%;
   overflow-x: hidden;
   width: 90%;
   margin: 30px auto;
-}
+} */
 
 .project {
   margin: 3%;
+  min-height: 420px;
   border-radius: 10px;
   box-shadow: rgb(169 157 237) 0px 1px 9px 0px;
-  min-width: 30%;
 }
 
 .project h2 {
@@ -228,7 +231,7 @@ a {
   }
 }
 
-.left-button {
+/* .left-button {
   position: absolute;
   left: 0;
   top: 40%;
@@ -246,9 +249,9 @@ a {
   cursor: pointer;
   box-shadow: 0px -1px 20px #ef02e81f;
   z-index: 10;
-}
+} */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .project {
     min-width: 40%;
   }
@@ -263,7 +266,7 @@ a {
   .right-button {
     font-size: 45px;
   }
-}
+} */
 
 /* Footer */
 
