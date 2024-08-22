@@ -16,15 +16,12 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google Fon Icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <!-- AOS Animation Library CDN Link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
+    <!-- Swiper JS CDN Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Custom CSS files -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -94,7 +91,7 @@
 
         <section id="about" class="px-2 py-4">
             <div class="container">
-                <div data-aos="fade-up" data-aos-duration="2000">
+                <div data-aos="fade-up" data-aos-duration="1000">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="about-img">
@@ -125,86 +122,117 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- About Section End -->
-        
+
         <hr class="container text-white">
-        
+
         <!-- Projects Section Start -->
 
         <section id="projects" class="container-fluid px-2 py-4">
-            <h2 class="section-title mb-5 position-relative">Projects</h2>
-            <div class="swiper container">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section-title mb-5 position-relative">Projects</h2>
+                <div class="swiper container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <img src="Media/Images/Job Portal.PNG" alt="Project 1">
+                                <div class="project-info">
+                                    <h3 class="project-title">Job Portal</h3>
+                                    <p class="project-description">A user-friendly website designed to help users find
+                                        job
+                                        listings easily. The website has been built using React and Tailwind CSS for a
+                                        modern
+                                        and responsive experience.
+                                    </p>
+                                    <a href="https://github.com/Saad0095/Job-Portal" target="_blank"><button
+                                            type="button" class="btn project-link">View
+                                            Project</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <img src="Media/Images/Gym.PNG" alt="Project 1">
+                                <div class="project-info">
+                                    <h3 class="project-title">Gym Website</h3>
+                                    <p class="project-description">A modern and responsive website for a gym or fitness
+                                        center. It includes information about services, classes, facilities, faqs and
+                                        contact
+                                        details.</p>
+                                    <a href="https://github.com/Saad0095/GetLean-Gym" target="_blank"><button
+                                            type="button" class="btn project-link">View
+                                            Project</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <img src="Media/Images/Quiz Website (1).png" alt="Project 1">
+                                <div class="project-info">
+                                    <h3 class="project-title">Quiz Website</h3>
+                                    <p class="project-description">Developed A Quiz Website using React and Tailwind with local storage.
+                                    </p>
+                                    <a href="https://github.com/Saad0095/Quiz-App-Using-React.js" target="_blank"><button
+                                            type="button" class="btn project-link">View
+                                            Project</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <img src="Media/Images/E-Commerce Product Catalog (1).PNG" alt="Project 1">
+                                <div class="project-info">
+                                    <h3 class="project-title">E-Commerce Product Catalog</h3>
+                                    <p class="project-description">Developed a dynamic E-commerce product catalog
+                                        using React and Tailwind CSS.
+                                        Utilized Axios for API integration with DummyJSON.
+                                        </p>
+                                    <a href="https://github.com/Saad0095/E-commerce-Product-Catalog-Project" target="_blank"><button
+                                            type="button" class="btn project-link">View
+                                            Project</button></a>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="project">
-                            <img src="Media/Images/Job Portal.PNG" alt="Project 1">
-                            <div class="project-info">
-                                <h3 class="project-title">Job Portal</h3>
-                                <p class="project-description">A user-friendly website designed to help users find job
-                                    listings easily. The website has been built using React and Tailwind CSS for a
-                                    modern
-                                    and responsive experience.
-                                </p>
-                                <a href="https://github.com/Saad0095/Job-Portal" target="_blank"><button type="button"
-                                        class="btn project-link">View
-                                        Project</button></a>
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <img src="Media/Images/project2.PNG" alt="Project 2">
+                                <div class="project-info">
+                                    <h3 class="project-title">Hotel Website</h3>
+                                    <p class="project-description">A visually appealing website for a hotel or resort.
+                                        It
+                                        showcases rooms, amenities,etc.</p>
+                                    <a href="https://saad0095.github.io/ComfortNook-Hotel/" target="_blank"><button
+                                            type="button" class="btn project-link">View Project</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project">
+                                <img src="Media/Images/project3.PNG" alt="Project 3">
+                                <div class="project-info">
+                                    <h3 class="project-title">Tic-Tac-Toe Game</h3>
+                                    <p class="project-description">A classic game of Tic-Tac-Toe built using HTML, CSS,
+                                        and
+                                        JavaScript.</p>
+                                    <a href="https://github.com/Saad0095/Tic-Tac-Toe-Game" target="_blank"><button
+                                            type="button" class="btn project-link">View
+                                            Project</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="project">
-                            <img src="Media/Images/Gym.PNG" alt="Project 1">
-                            <div class="project-info">
-                                <h3 class="project-title">Gym Website</h3>
-                                <p class="project-description">A modern and responsive website for a gym or fitness
-                                    center. It includes information about services, classes, facilities, faqs and
-                                    contact
-                                    details.</p>
-                                <a href="https://github.com/Saad0095/GetLean-Gym" target="_blank"><button type="button"
-                                        class="btn project-link">View
-                                        Project</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project">
-                            <img src="Media/Images/project2.PNG" alt="Project 2">
-                            <div class="project-info">
-                                <h3 class="project-title">Hotel Website</h3>
-                                <p class="project-description">A visually appealing website for a hotel or resort.
-                                    It
-                                    showcases rooms, amenities,etc.</p>
-                                <a href="https://saad0095.github.io/ComfortNook-Hotel/" target="_blank"><button
-                                        type="button" class="btn project-link">View Project</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="project">
-                            <img src="Media/Images/project3.PNG" alt="Project 3">
-                            <div class="project-info">
-                                <h3 class="project-title">Tic-Tac-Toe Game</h3>
-                                <p class="project-description">A classic game of Tic-Tac-Toe built using HTML, CSS,
-                                    and
-                                    JavaScript.</p>
-                                <a href="https://github.com/Saad0095/Tic-Tac-Toe-Game" target="_blank"><button
-                                        type="button" class="btn project-link">View
-                                        Project</button></a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
                 </div>
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="text-center mt-4">
-                <a href="https://github.com/Saad0095" target="_blank" rel="noopener noreferrer"><button
-                        type="button" class="btn btn-primary">Explore More Projects</button></a>
+                <div class="text-center mt-4">
+                    <a href="https://github.com/Saad0095" target="_blank" rel="noopener noreferrer"><button
+                            type="button" class="btn btn-primary">Explore More Projects</button></a>
+                </div>
             </div>
         </section>
 
@@ -296,19 +324,16 @@
 
     <!-- AOS Animation Library CDN Link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
         AOS.init();
     </script>
 
     <!-- Bootstrap CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+    <!-- Swiper JS CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom files  -->
