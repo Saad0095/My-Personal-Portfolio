@@ -3,6 +3,7 @@
 :root {
   --primary-color: rgb(2, 171, 194);
   --primary-background-color: #121212;
+  /* --secondary-color: #2ecc71; */
   --secondary-color: #8902ef;
   --primary-text-font: "Roboto", sans-serif;
   --primary-heading-font: "Roboto Condensed", sans-serif;
@@ -117,8 +118,10 @@ a {
 }
 
 .hero-section .main-title .btn:hover {
-  color: #2ecc71;
-  border: 2px solid #2ecc71;
+  /* color: #2ecc71;
+  border: 2px solid #2ecc71; */
+  color: #8902ef;
+  border: 2px solid #8902ef;
 }
 
 .hero-section img {
@@ -178,8 +181,11 @@ a {
 } */
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 3%;
-  min-height: 420px;
+  height: 500px;
   border-radius: 10px;
   box-shadow: rgb(169 157 237) 0px 1px 9px 0px;
 }
@@ -199,6 +205,9 @@ a {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
 }
 
 .project-title {
@@ -211,7 +220,12 @@ a {
   font-size: 16px;
   margin-bottom: 20px;
   font-family: var(--primary-text-font);
+  flex-grow: 1;  
+  font-size: 16px;
+  font-family: var(--primary-text-font);
+
 }
+
 
 .project-link {
   display: flex;
