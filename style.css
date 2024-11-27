@@ -282,6 +282,29 @@ a {
   }
 } */
 
+/* Contact Section */
+
+.contact{
+  width: 368px;
+  margin: auto;
+}
+.contact-details {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: var(--primary-text-font);
+  /* text-align: center; */
+}
+
+.contact-details a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+
 /* Footer */
 
 footer {
